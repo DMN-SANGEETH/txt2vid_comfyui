@@ -230,56 +230,6 @@
       "bgcolor": "#335"
     },
     {
-      "id": 2,
-      "type": "ImageScale",
-      "pos": [
-        560,
-        130
-      ],
-      "size": {
-        "0": 315,
-        "1": 130
-      },
-      "flags": {},
-      "order": 12,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "image",
-          "type": "IMAGE",
-          "link": 39
-        }
-      ],
-      "outputs": [
-        {
-          "name": "IMAGE",
-          "type": "IMAGE",
-          "links": [
-            31,
-            40
-          ],
-          "shape": 3,
-          "slot_index": 0
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "ImageScale",
-        "ttNbgOverride": {
-          "color": "#223",
-          "bgcolor": "#335",
-          "groupcolor": "#88A"
-        }
-      },
-      "widgets_values": [
-        "nearest-exact",
-        512,
-        768,
-        "disabled"
-      ],
-      "color": "#223",
-      "bgcolor": "#335"
-    },
-    {
       "id": 27,
       "type": "PreviewImage",
       "pos": [
@@ -303,84 +253,6 @@
       "properties": {
         "Node name for S&R": "PreviewImage"
       }
-    },
-    {
-      "id": 9,
-      "type": "CLIPVisionLoader",
-      "pos": [
-        -73,
-        -139
-      ],
-      "size": {
-        "0": 409.058349609375,
-        "1": 58
-      },
-      "flags": {},
-      "order": 2,
-      "mode": 0,
-      "outputs": [
-        {
-          "name": "CLIP_VISION",
-          "type": "CLIP_VISION",
-          "links": [
-            8
-          ],
-          "shape": 3,
-          "slot_index": 0
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "CLIPVisionLoader",
-        "ttNbgOverride": {
-          "color": "#223",
-          "bgcolor": "#335",
-          "groupcolor": "#88A"
-        }
-      },
-      "widgets_values": [
-        "pytorch_model.bin"
-      ],
-      "color": "#223",
-      "bgcolor": "#335"
-    },
-    {
-      "id": 4,
-      "type": "[AnimateAnyone] Load Pose Guider",
-      "pos": [
-        -74,
-        -16
-      ],
-      "size": {
-        "0": 420,
-        "1": 60
-      },
-      "flags": {},
-      "order": 3,
-      "mode": 0,
-      "outputs": [
-        {
-          "name": "pose_guider",
-          "type": "POSE_GUIDER",
-          "links": [
-            3
-          ],
-          "shape": 3,
-          "slot_index": 0
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "[AnimateAnyone] Load Pose Guider",
-        "ttNbgOverride": {
-          "color": "#223",
-          "bgcolor": "#335",
-          "groupcolor": "#88A"
-        }
-      },
-      "widgets_values": [
-        "./pretrained_weights/MusePose/new/pose_guider.pth"
-      ],
-      "color": "#223",
-      "bgcolor": "#335"
     },
     {
       "id": 24,
@@ -461,47 +333,9 @@
         true,
         false,
         "ip-adapter-faceid-plusv2_sd15_lora.safetensors"
-      ]
-    },
-    {
-      "id": 11,
-      "type": "VAELoader",
-      "pos": [
-        -67,
-        -263
       ],
-      "size": {
-        "0": 420,
-        "1": 60
-      },
-      "flags": {},
-      "order": 4,
-      "mode": 0,
-      "outputs": [
-        {
-          "name": "VAE",
-          "type": "VAE",
-          "links": [
-            10,
-            15
-          ],
-          "shape": 3,
-          "slot_index": 0
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "VAELoader",
-        "ttNbgOverride": {
-          "color": "#223",
-          "bgcolor": "#335",
-          "groupcolor": "#88A"
-        }
-      },
-      "widgets_values": [
-        "anime_muse/diffusion_pytorch_model.bin"
-      ],
-      "color": "#223",
-      "bgcolor": "#335"
+      "color": "#323",
+      "bgcolor": "#535"
     },
     {
       "id": 10,
@@ -659,7 +493,7 @@
         "1": 314
       },
       "flags": {},
-      "order": 5,
+      "order": 2,
       "mode": 0,
       "outputs": [
         {
@@ -694,88 +528,6 @@
       "bgcolor": "#335"
     },
     {
-      "id": 7,
-      "type": "ImageScale",
-      "pos": [
-        486,
-        -458
-      ],
-      "size": {
-        "0": 315,
-        "1": 130
-      },
-      "flags": {},
-      "order": 10,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "image",
-          "type": "IMAGE",
-          "link": 5
-        }
-      ],
-      "outputs": [
-        {
-          "name": "IMAGE",
-          "type": "IMAGE",
-          "links": [
-            6,
-            9
-          ],
-          "shape": 3,
-          "slot_index": 0
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "ImageScale",
-        "ttNbgOverride": {
-          "color": "#223",
-          "bgcolor": "#335",
-          "groupcolor": "#88A"
-        }
-      },
-      "widgets_values": [
-        "nearest-exact",
-        512,
-        768,
-        "disabled"
-      ],
-      "color": "#223",
-      "bgcolor": "#335"
-    },
-    {
-      "id": 25,
-      "type": "[AnimateAnyone] Load UNet2D ConditionModel",
-      "pos": [
-        887,
-        -429
-      ],
-      "size": {
-        "0": 517.0001220703125,
-        "1": 97.77777862548828
-      },
-      "flags": {},
-      "order": 6,
-      "mode": 0,
-      "outputs": [
-        {
-          "name": "unet2d",
-          "type": "UNET2D",
-          "links": [
-            29
-          ],
-          "shape": 3
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "[AnimateAnyone] Load UNet2D ConditionModel"
-      },
-      "widgets_values": [
-        "./pretrained_weights/stable-diffusion-v1-5/unet/",
-        "./pretrained_weights/MusePose/new/reference_unet.pth"
-      ]
-    },
-    {
       "id": 26,
       "type": "[AnimateAnyone] Load UNet3D ConditionModel",
       "pos": [
@@ -787,7 +539,7 @@
         "1": 177.81138610839844
       },
       "flags": {},
-      "order": 7,
+      "order": 3,
       "mode": 0,
       "outputs": [
         {
@@ -806,7 +558,9 @@
         "./pretrained_weights/stable-diffusion-v1-5/unet/",
         "./pretrained_weights/MusePose/new/denoising_unet.pth",
         "./pretrained_weights/MusePose/new/motion_module.pth"
-      ]
+      ],
+      "color": "#232",
+      "bgcolor": "#353"
     },
     {
       "id": 14,
@@ -854,8 +608,8 @@
           "groupcolor": "#88A"
         }
       },
-      "color": "#223",
-      "bgcolor": "#335"
+      "color": "#233",
+      "bgcolor": "#355"
     },
     {
       "id": 15,
@@ -866,7 +620,7 @@
       ],
       "size": [
         300,
-        290
+        724
       ],
       "flags": {},
       "order": 19,
@@ -925,8 +679,8 @@
           }
         }
       },
-      "color": "#223",
-      "bgcolor": "#335"
+      "color": "#233",
+      "bgcolor": "#355"
     },
     {
       "id": 16,
@@ -961,8 +715,8 @@
         "PoseToVideoImages",
         "PNG"
       ],
-      "color": "#223",
-      "bgcolor": "#335"
+      "color": "#233",
+      "bgcolor": "#355"
     },
     {
       "id": 30,
@@ -1013,6 +767,258 @@
         "yolox_l.onnx",
         "dw-ll_ucoco_384_bs5.torchscript.pt"
       ]
+    },
+    {
+      "id": 11,
+      "type": "VAELoader",
+      "pos": [
+        -67,
+        -263
+      ],
+      "size": {
+        "0": 420,
+        "1": 60
+      },
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "VAE",
+          "type": "VAE",
+          "links": [
+            10,
+            15
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "VAELoader",
+        "ttNbgOverride": {
+          "color": "#223",
+          "bgcolor": "#335",
+          "groupcolor": "#88A"
+        }
+      },
+      "widgets_values": [
+        "anime_muse/diffusion_pytorch_model.bin"
+      ],
+      "color": "#232",
+      "bgcolor": "#353"
+    },
+    {
+      "id": 9,
+      "type": "CLIPVisionLoader",
+      "pos": [
+        -73,
+        -139
+      ],
+      "size": {
+        "0": 409.058349609375,
+        "1": 58
+      },
+      "flags": {},
+      "order": 5,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "CLIP_VISION",
+          "type": "CLIP_VISION",
+          "links": [
+            8
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "CLIPVisionLoader",
+        "ttNbgOverride": {
+          "color": "#223",
+          "bgcolor": "#335",
+          "groupcolor": "#88A"
+        }
+      },
+      "widgets_values": [
+        "pytorch_model.bin"
+      ],
+      "color": "#232",
+      "bgcolor": "#353"
+    },
+    {
+      "id": 4,
+      "type": "[AnimateAnyone] Load Pose Guider",
+      "pos": [
+        -74,
+        -16
+      ],
+      "size": {
+        "0": 420,
+        "1": 60
+      },
+      "flags": {},
+      "order": 6,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "pose_guider",
+          "type": "POSE_GUIDER",
+          "links": [
+            3
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "[AnimateAnyone] Load Pose Guider",
+        "ttNbgOverride": {
+          "color": "#223",
+          "bgcolor": "#335",
+          "groupcolor": "#88A"
+        }
+      },
+      "widgets_values": [
+        "./pretrained_weights/MusePose/new/pose_guider.pth"
+      ],
+      "color": "#232",
+      "bgcolor": "#353"
+    },
+    {
+      "id": 2,
+      "type": "ImageScale",
+      "pos": [
+        560,
+        130
+      ],
+      "size": {
+        "0": 315,
+        "1": 130
+      },
+      "flags": {},
+      "order": 12,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 39
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            31,
+            40
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ImageScale",
+        "ttNbgOverride": {
+          "color": "#223",
+          "bgcolor": "#335",
+          "groupcolor": "#88A"
+        }
+      },
+      "widgets_values": [
+        "nearest-exact",
+        512,
+        768,
+        "disabled"
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 7,
+      "type": "ImageScale",
+      "pos": [
+        486,
+        -458
+      ],
+      "size": {
+        "0": 315,
+        "1": 130
+      },
+      "flags": {},
+      "order": 10,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 5
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            6,
+            9
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ImageScale",
+        "ttNbgOverride": {
+          "color": "#223",
+          "bgcolor": "#335",
+          "groupcolor": "#88A"
+        }
+      },
+      "widgets_values": [
+        "nearest-exact",
+        512,
+        768,
+        "disabled"
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 25,
+      "type": "[AnimateAnyone] Load UNet2D ConditionModel",
+      "pos": [
+        887,
+        -429
+      ],
+      "size": {
+        "0": 517.0001220703125,
+        "1": 97.77777862548828
+      },
+      "flags": {},
+      "order": 7,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "unet2d",
+          "type": "UNET2D",
+          "links": [
+            29
+          ],
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "[AnimateAnyone] Load UNet2D ConditionModel"
+      },
+      "widgets_values": [
+        "./pretrained_weights/stable-diffusion-v1-5/unet/",
+        "./pretrained_weights/MusePose/new/reference_unet.pth"
+      ],
+      "color": "#232",
+      "bgcolor": "#353"
     }
   ],
   "links": [
